@@ -1,0 +1,13 @@
+# import the turtle module
+import turtle as trtl
+painter = trtl.Turtle()
+
+painter.circle(125)
+painter.penup()
+painter.circle(125, 100)
+painter.right(20)
+painter.pendown()
+painter.circle(20)
+
+wn = trtl.Screen()
+wn.mainloop()
