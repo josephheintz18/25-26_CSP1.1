@@ -48,8 +48,8 @@ for step in range(20):
             if abs(ht.xcor() - vt.xcor()) < pixel_size:
                 if abs(ht.ycor() - vt.ycor()) < pixel_size:
                     new_shape = turtle_shapes.pop
-                    vt.forward(-20)
-                    ht.forward(-20)
+                    vt.forward(-10)
+                    ht.forward(-10)
 for turtle in horiz_turtles:
     turtle.setcolor("violet")
 for turtle in vert_turtles:
