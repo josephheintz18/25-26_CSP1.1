@@ -3,7 +3,6 @@ t = trtl.Turtle()
 t.speed(0)
 
 lamp = 0
-
 #Cap
 t.right(45)
 t.penup()
@@ -41,21 +40,24 @@ t.pendown()
 t.right(-53)
 t.forward(65)
 t.right(30)
-#yk yk
-t.right(-107)
-t.forward(150)
+t.right(-240)
+t.circle(-87, -95)
 t.penup()
-t.forward(-150)
-t.right(107)
-#yk yk
+t.right(48)
+t.forward(127)
+t.right(-75)
 t.pendown()
-t.forward(65)
+t.forward(50)
 t.right(-107)
-t.pendown()
 t.right(-130)
 t.circle(-100, -100)
-t.right(135)
+t.right(123)
+t.forward(45)
+t.right(24)
 t.forward(65)
+
+#The lava
+
 
 wn = trtl.Screen()
 wn.mainloop()
