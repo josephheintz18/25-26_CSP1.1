@@ -1,8 +1,11 @@
 import turtle as trtl
 t = trtl.Turtle()
-t.speed(0)
 
+t.speed(0)
 lamp = 0
+x = 0
+y = 0
+
 #Cap
 t.right(45)
 t.penup()
@@ -57,7 +60,17 @@ t.right(24)
 t.forward(65)
 
 #The lava
-
+for q in range(100):
+    t.penup()
+    t.shape('circle')
+    t.color('orange')
+    t.goto(x,y)
+    t.pendown()
+    t.stamp()
+    x+=10
+    y-=30
+    x = t.xcor()
+    y = t.ycor()
 
 wn = trtl.Screen()
 wn.mainloop()
