@@ -3,8 +3,10 @@ t = trtl.Turtle()
 
 t.speed(0)
 lamp = 0
-x = 0
-y = 0
+xcor = 0
+ycor = 0
+xcor2 = -20
+ycor2 = -80
 
 #Cap
 t.right(45)
@@ -59,18 +61,30 @@ t.forward(45)
 t.right(24)
 t.forward(65)
 
+t.speed(1)
 #The lava
-for q in range(100):
+for q in range(3):
     t.penup()
     t.shape('circle')
-    t.color('orange')
-    t.goto(x,y)
+    t.color('darkorange')
+    t.goto(xcor, ycor)
     t.pendown()
     t.stamp()
-    x+=10
-    y-=30
-    x = t.xcor()
-    y = t.ycor()
+    if xcor > 10:
+        t.penup()
+        t.color('orange')
+        t.goto(xcor2, ycor2)
+        t.shapesize(2.5)
+        t.stamp()
+    elif xcor == 0:
+        t.color('orange')
+        t.shapesize(1.5)
+        t.stamp()
+
+    xcor += 20
+    ycor += -30
+
+
 
 wn = trtl.Screen()
 wn.mainloop()
