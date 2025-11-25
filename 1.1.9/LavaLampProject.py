@@ -63,21 +63,37 @@ t.forward(65)
 
 t.speed(1)
 #The lava
+t.penup()
+t.forward(5)
+t.right(60)
+t.forward(-9)
+t.pendown()
+t.pensize(12)
+t.pencolor('orange')
+t.right(-80)
+t.forward(145)
+t.right(-120)
+t.circle (-50, 88)
+t.right(-123)
+t.forward(142)
+t.right(-85)
+t.
+
 for q in range(3):
     t.penup()
     t.shape('circle')
-    t.color('darkorange')
+    t.color('beige')
     t.goto(xcor, ycor)
     t.pendown()
     t.stamp()
     if xcor > 10:
         t.penup()
-        t.color('orange')
+        t.color('beige')
         t.goto(xcor2, ycor2)
         t.shapesize(2.5)
         t.stamp()
     elif xcor == 0:
-        t.color('orange')
+        t.color('yellow')
         t.shapesize(1.5)
         t.stamp()
 
