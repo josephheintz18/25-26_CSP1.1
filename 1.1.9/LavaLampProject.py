@@ -89,7 +89,6 @@ t.right(90)
 t.forward(40)
 t.pensize(60)
 t.forward(75)
-t.speed(1)
 t.pensize(60)
 t.right(-150)
 t.forward(35)
@@ -107,12 +106,12 @@ for q in range(3):
     t.stamp()
     if xcor > 10:
         t.penup()
-        t.color('darkorange')
+        t.color('yellow')
         t.goto(xcor2, ycor2)
         t.shapesize(2.5)
         t.stamp()
     elif xcor == 0:
-        t.color('darkorange')
+        t.color('yellow')
         t.shapesize(1.5)
         t.stamp()
 
